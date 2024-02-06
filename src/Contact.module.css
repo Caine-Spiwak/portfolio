@@ -1,0 +1,50 @@
+.contactHeader {
+  margin: auto;
+  max-width: 1000px;
+  margin-bottom: 70px;
+}
+
+.formTitle {
+  font-size: .9rem;
+  font-family: Roboto-Bold;
+  color: rgb(45, 45, 240);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-family: Roboto-Bold;
+  margin-bottom: 70px;
+}
+
+.formContainer {
+  margin: auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  display: flex;
+  gap: 50px;
+}
+
+input {
+  padding: 5px;
+}
+
+textarea {
+  padding: 5px;
+}
+
+.formColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+}

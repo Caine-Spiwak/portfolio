@@ -1,0 +1,268 @@
+/* General */
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+       url('./assets/fonts/roboto-regular-webfont.woff') format('woff');
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('./assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
+       url('./assets/fonts/roboto-bold-webfont.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Navbar */
+header {
+  box-shadow: 0 0px 10px 0px rgba(0, 0, 0, .2);
+}
+
+.nav {
+  margin: auto;
+  max-width: 1000px;
+  min-height: 7vh;
+  max-height: 60px;
+  display: flex;
+}
+
+.menu {
+  margin-left: auto;
+  padding: 10px 0 10px 0;
+  display: flex;
+}
+
+.menu-items {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: Roboto-Bold;
+  letter-spacing: .05rem;
+}
+/* Hero */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  max-width: 1000px;
+  min-height: 93vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.hero-top {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.hero-top-left {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: Roboto-Bold;
+}
+
+.sub-title {
+  margin-top: 10px;
+  font-size: .85rem;
+  color: rgb(130, 130, 130);
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.image {
+  background: url(..//public/cainespiwak.png);
+  background-size: cover;
+  background-position: center center;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 20px 5px rgba(0, 0, 0, .2);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+.hero-bottom {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.hero-bottom>hr {
+  height: 20px
+}
+
+.tech-icons {
+  margin-left: 50px;
+  display: flex;
+  gap: 40px;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+@keyframes animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+  }
+}
+
+/* Portfolio */
+.portfolio-section {
+  margin-bottom: 100px;
+}
+
+.portfolio-section>hr {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.portfolio-header {
+  margin: auto;
+  max-width: 1000px;
+}
+
+.port-title {
+  font-size: .9rem;
+  font-family: Roboto-Bold;
+  color: rgb(45, 45, 240);
+}
+
+.port-subtitle {
+  font-size: 1.2rem;
+  font-family: Roboto-Bold;
+  margin-bottom: 70px;
+}
+
+/* Projects */
+.proj-section {
+  margin: auto;
+  max-width: 1000px;
+  margin-bottom: 70px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.proj-image {
+  min-width: 250px;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.proj-about {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.proj-title {
+  align-self: center;
+  margin-bottom: 7px;
+}
+
+.proj-desc {
+  font-size: .88rem;
+  width: 75%;
+  align-self: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.proj-btns {
+  width: 75%;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.proj-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.proj-about>hr {
+  width: 75%;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.tech {
+  font-size: .9rem;
+  width: 75%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tech-title {
+  margin: auto;
+  font-family: Roboto-bold;
+}
+
+.tech-list {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.tech-list>li {
+  margin: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+
+.copy {
+  align-self: flex-end;
+}
+
