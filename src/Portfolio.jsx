@@ -15,7 +15,7 @@ const Portfolio = () => {
           <img src="./taskhub.dev-screenshot.png" className="proj-image"></img>
           <div className="proj-about">
             <p className="proj-title">www.taskhub.dev</p>
-            <p className="proj-desc">A task management app inspired by Tony Robbins RPM framework. Organize your goals by project, 
+            <p className="proj-desc">A life management app inspired by Tony Robbins RPM framework. Organize your goals by project, 
             each project having organizable tasks, and each task having organizable todos.</p>
             <div className="proj-btns">
               <div className="proj-btn">CODE <FaGithub /></div>
@@ -23,14 +23,14 @@ const Portfolio = () => {
             </div>
             <hr></hr>
             <div className="tech">
-              <div className="tech-title">Core Tech</div>
+              <div className="tech-title">Key Features</div>
               <ul className="tech-list">
-                <li>Node.js</li>
-                <li>JSONWebToken</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>DnD-Kit</li>
-                <li>MongoDB</li>
+                <li>REST API</li>
+                <li>Authorization (bcrypt)</li>
+                <li>Authentication (jwt)</li>
+                <li>NoSQL</li>
+                <li>React / Redux</li>
+                <li>Dnd-Kit</li>
               </ul>
             </div>
           </div>
