@@ -3,8 +3,8 @@ import style from './Contact.module.css'
 const Contact = () => {
 
   return (
-    <div className='container'>
-      <div id='contact' className="contactSection">
+    <div className={style.container}>
+      <div id='contact' className={style.contactSection}>
         <div className={style.contactHeader}>
           <p className={style.formTitle}>CONTACT ME</p>
           <p className={style.subtitle}>I&apos;d love to hear from you...</p>
@@ -36,6 +36,8 @@ const Contact = () => {
                 placeholder="Type your message here..."
               ></textarea>
             </div>
+
+            <button type='submit'>SEND</button>
 
           </form>
         </div>
