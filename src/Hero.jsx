@@ -7,41 +7,34 @@ import {
   FaCss3Alt,
   FaGithub
 } from "react-icons/fa";
+import style from './Hero.module.css'
 import { SiJavascript } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 
 
-
-
-
-
-
-
-
-
 const Hero = () => {
   return (
-    <div className="container">
-      <div className="hero">
-        <div className="hero-top">
-          <div className="hero-top-left">
+    <div className={style.container}>
+      <div className={style.hero}>
+        <div className={style.heroTop}>
+          <div className={style.heroTopLeft}>
             <p>Caine Spiwak</p>
-            <h1 className="title">Full Stack <br/>Web Developer</h1>
-            <p className="sub-title">Hi, I&apos;m Caine Spiwak. I&apos;m looking for the next team to join, that I can become an immediate asset for.</p>
-            <div className="social-icons">
+            <h1 className={style.title}>Full Stack <br/>Web Developer</h1>
+            <p className={style.subTitle}>Hi, I&apos;m Caine Spiwak. I&apos;m looking for the next team to join, that I can become an immediate asset for.</p>
+            <div className={style.socialIcons}>
             <FaGithub />
             <FaLinkedin />
             <FaFacebook />
             </div>
           </div>
-          <div className="hero-top-right">
-            <div className="image"></div>
+          <div className={style.heroTopRight}>
+            <div className={style.image}></div>
           </div>
         </div>
-        <div className="hero-bottom">
+        <div className={style.heroBottom}>
           <div>Tech Stack</div>
           <hr />
-          <div className="tech-icons">
+          <div className={style.techIcons}>
             <FaHtml5 style={{'color': '#ff6300'}}/>
             <FaCss3Alt style={{'color': '#105dbd'}}/>
             <SiJavascript style={{'color': '#fffc00', 'background': 'black'}}/>

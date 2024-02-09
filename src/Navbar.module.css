@@ -1,0 +1,70 @@
+/* Navbar */
+header {
+  box-shadow: 0 0px 10px 0px rgba(0, 0, 0, .2);
+	position: relative;
+}
+  
+.nav {
+	margin: auto;
+	max-width: 1000px;
+	min-height: 7vh;
+	max-height: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu {
+	margin-left: auto;
+	padding: 10px 0 10px 0;
+	display: flex;
+}
+
+.menuItems {
+	margin: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.logoSection {
+	display: flex;
+	align-items: center;
+	margin: 1rem;
+}
+
+.logo {
+	font-family: Roboto-Bold;
+	letter-spacing: .05rem;
+}
+
+.menuIcon {
+	display: none;
+}
+
+.dropdown {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 10px 0 10px 0;
+	align-items: center;
+	width: 100%;
+	background: white;
+	top: 50px;
+}
+
+.hidden {
+	display: none;
+}
+
+@media (max-width: 480px) {
+	.menu {
+		display: none;
+		cursor: pointer;
+	}
+
+	.menuIcon {
+		display: flex;
+		align-items: center;
+	}
+}

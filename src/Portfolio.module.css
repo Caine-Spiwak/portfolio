@@ -1,0 +1,124 @@
+/* Portfolio */
+.portSection {
+	margin-bottom: 100px;
+}
+
+.portSection>hr {
+	margin: auto;
+	max-width: 1000px;
+}
+
+.portHeader {
+	margin: auto;
+	max-width: 1000px;
+	margin-bottom: 50px;
+}
+
+.portTitle {
+	font-size: .9rem;
+	font-family: Roboto-Bold;
+	color: rgb(45, 45, 240);
+}
+
+.portSubtitle {
+	font-size: 1.2rem;
+	font-family: Roboto-Bold;
+}
+
+/* Projects */
+.projSection {
+	margin: auto;
+	max-width: 1000px;
+	margin-bottom: 70px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.projImage {
+	min-width: 250px;
+	max-width: 500px;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.projAbout {
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+}
+
+.projTitle {
+	align-self: center;
+	margin-bottom: 7px;
+}
+
+.projDesc {
+	font-size: .88rem;
+	width: 75%;
+	align-self: center;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.projBtns {
+	width: 75%;
+	align-self: center;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+.projBtn {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+}
+
+.projAbout>hr {
+	width: 75%;
+	align-self: center;
+	margin-bottom: 20px;
+}
+
+.tech {
+	font-size: .9rem;
+	width: 75%;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.techTitle {
+	margin: auto;
+	font-family: Roboto-bold;
+}
+
+.techList {
+	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+}
+
+.techList>li {
+	margin: auto;
+	text-align: center;
+}
+
+@media (max-width: 480px) {
+	.container {
+		margin: 5px;
+		margin-bottom: 50px;
+	}
+
+	.portHeader {
+		margin-bottom: 35px;
+	}
+
+	.projAbout {
+		margin-top: 20px;
+	}
+}

@@ -1,3 +1,10 @@
+
+.contactSection {
+  margin: auto;
+  margin-bottom: 100px;
+  max-width: 1000px;
+}
+
 .contactHeader {
   margin: auto;
   max-width: 1000px;
@@ -13,12 +20,10 @@
 .subtitle {
   font-size: 1.2rem;
   font-family: Roboto-Bold;
-  margin-bottom: 70px;
 }
 
 .formContainer {
   margin: auto;
-  max-width: 1000px;
   display: flex;
   justify-content: center;
 }
@@ -27,7 +32,10 @@ form {
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
   padding: 50px;
   display: flex;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 50%;
 }
 
 input {
@@ -42,9 +50,53 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .formRow {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+button {
+  margin: auto;
+  margin-top: 30px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-family: Roboto-Bold;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+	.container {
+		margin: 5px;
+		margin-bottom: 50px;
+	}
+
+  .contactHeader {
+    margin-bottom: 35px;
+  }
+
+  .formContainer {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+    gap: 20px;
+    padding: 50px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
 }

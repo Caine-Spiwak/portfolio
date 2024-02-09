@@ -1,0 +1,134 @@
+/* Hero */
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.hero {
+	max-width: 1000px;
+	min-height: 93vh;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 50px;
+}
+
+.heroTop {
+	display: flex;
+	gap: 100px;
+}
+
+.heroTopRight {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+}
+
+.heroTopLeft {
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	font-family: Roboto-Bold;
+}
+
+.subTitle {
+	margin-top: 10px;
+	font-size: .85rem;
+	color: rgb(130, 130, 130);
+}
+
+.socialIcons {
+	margin-top: 15px;
+	display: flex;
+	gap: 10px;
+}
+
+.image {
+	background: url(..//public/cainespiwak.png);
+	background-size: cover;
+	background-position: center center;
+	width: 200px;
+	height: 200px;
+	box-shadow: 0 20px 5px rgba(0, 0, 0, .2);
+	animation: animate 5s ease-in-out infinite;
+	transition: all 1s ease-in-out;
+}
+
+.heroBottom {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.heroBottom>hr {
+	height: 20px
+}
+
+.techIcons {
+	margin-left: 50px;
+	display: flex;
+	gap: 40px;
+	font-size: 1.5rem;
+	align-items: center;
+}
+
+@keyframes animate {
+	0% {
+		border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+	}
+	50% {
+		border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+	}
+	100% {
+		border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		margin: 5px;
+		margin-bottom: 50px;
+	}
+
+	.heroTop {
+		flex-direction: column;
+		margin-top: 20px;
+		align-self: center;
+		text-align: center;
+		gap: 50px;
+	}
+
+	.heroTopRight {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.socialIcons {
+		align-self: center;
+		text-align: center;
+		flex-wrap: wrap;
+	} 
+
+	.heroBottom {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.heroBottom>hr {
+		width: 30px;
+		height: 1px;
+	}
+
+	.techIcons {
+		margin: auto;
+		gap: 20px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
