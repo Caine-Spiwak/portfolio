@@ -11,7 +11,7 @@ const Contact = () => {
     e.preventDefault();
     const data = { name, email, message };
     await axios
-      .post('http://localhost:5555/email', data)
+      .post('https://portfolio-fc76.onrender.com/email', data)
       .then(() => {
         setName(''); // Clear the state after sending mail
         setEmail('');
