@@ -66,5 +66,6 @@ header {
 	.menuIcon {
 		display: flex;
 		align-items: center;
+		margin: 1rem;
 	}
 }
