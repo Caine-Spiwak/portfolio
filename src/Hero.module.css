@@ -49,7 +49,7 @@
 }
 
 .image {
-	background: url(..//public/cainespiwak.png);
+	background: url(/cainespiwak.png);
 	background-size: cover;
 	background-position: center center;
 	width: 200px;
