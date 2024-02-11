@@ -20,8 +20,8 @@ const Portfolio = () => {
             <p className={style.projDesc}>A life management app inspired by Tony Robbins RPM framework. Organize your goals by project, 
             each project having organizable tasks, and each task having organizable todos.</p>
             <div className={style.projBtns}>
-              <Link to='https://github.com/Caine-Spiwak/taskhub.dev' className={style.projBtn}>CODE <FaGithub /></Link>
-              <Link to='https://www.taskhub.dev/' className={style.projBtn}>LIVE PREVIEW <FaExternalLinkAlt /></Link>
+              <Link to='https://github.com/Caine-Spiwak/taskhub.dev' target="_blank" rel="noopener noreferrer" className={style.projBtn}>CODE <FaGithub /></Link>
+              <Link to='https://www.taskhub.dev/' target="_blank" rel="noopener noreferrer" className={style.projBtn}>LIVE PREVIEW <FaExternalLinkAlt /></Link>
             </div>
             <hr></hr>
             <div className={style.tech}>
