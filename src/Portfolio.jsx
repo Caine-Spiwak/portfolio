@@ -1,6 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import style from "./Portfolio.module.css"
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
 
@@ -19,8 +20,8 @@ const Portfolio = () => {
             <p className={style.projDesc}>A life management app inspired by Tony Robbins RPM framework. Organize your goals by project, 
             each project having organizable tasks, and each task having organizable todos.</p>
             <div className={style.projBtns}>
-              <div className={style.projBtn}>CODE <FaGithub /></div>
-              <div className={style.projBtn}>LIVE PREVIEW <FaExternalLinkAlt /></div>
+              <Link to='https://github.com/Caine-Spiwak/taskhub.dev' className={style.projBtn}>CODE <FaGithub /></Link>
+              <Link to='https://www.taskhub.dev/' className={style.projBtn}>LIVE PREVIEW <FaExternalLinkAlt /></Link>
             </div>
             <hr></hr>
             <div className={style.tech}>
