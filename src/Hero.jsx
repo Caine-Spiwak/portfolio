@@ -1,5 +1,4 @@
 import { 
-  FaFacebook,
   FaLinkedin,
   FaReact,
   FaNode,
@@ -10,6 +9,7 @@ import {
 import style from './Hero.module.css'
 import { SiJavascript } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 
 const Hero = () => {
@@ -22,9 +22,8 @@ const Hero = () => {
             <h1 className={style.title}>Full Stack <br/>Web Developer</h1>
             <p className={style.subTitle}>Hi, I&apos;m Caine Spiwak. I&apos;m looking for the next team to join, that I can become an immediate asset for.</p>
             <div className={style.socialIcons}>
-            <FaGithub />
-            <FaLinkedin />
-            <FaFacebook />
+            <Link to='https://github.com/Caine-Spiwak/taskhub.dev' target="_blank" rel="noopener noreferrer"><FaGithub /></Link>
+            <Link to='https://www.linkedin.com/in/caine-spiwak/' target="_blank" rel="noopener noreferrer"><FaLinkedin /></Link>
             </div>
           </div>
           <div className={style.heroTopRight}>
